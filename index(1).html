@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BAPPERIDA – Badan Perencanaan Pembangunan Riset dan Inovasi Daerah</title>
+  <meta name="description" content="Badan Perencanaan Pembangunan Riset dan Inovasi Daerah – mewujudkan pembangunan yang terencana, inovatif, dan berkelanjutan."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span>☎ (024) 123-4567</span>
+      <span>✉ bapperida@daerah.go.id</span>
+      <span>🕐 Senin–Jumat: 08.00–16.00 WIB</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#" title="Facebook">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </a>
+      <a href="#" title="Twitter/X">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l16 16M4 20L20 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      </a>
+      <a href="#" title="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+      <a href="#" title="YouTube">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white"/></svg>
+      </a>
+      <span class="topbar-divider"></span>
+      <a href="#" class="topbar-link">PPID</a>
+      <a href="#" class="topbar-link">LPSE</a>
+      <a href="#" class="topbar-link">SIPD</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#" class="header-logo">
+      <div class="logo-emblem">
+        <svg width="64" height="64" viewBox="0 0 64 64">
+          <circle cx="32" cy="32" r="30" fill="#1a4080" stroke="#c8a951" stroke-width="2"/>
+          <circle cx="32" cy="32" r="24" fill="none" stroke="#c8a951" stroke-width="1" stroke-dasharray="4 2"/>
+          <path d="M20 44 L26 24 L32 38 L38 28 L44 44" stroke="#c8a951" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="32" cy="22" r="4" fill="#c8a951"/>
+          <path d="M24 50 L40 50" stroke="#c8a951" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">BAPPERIDA</span>
+        <span class="logo-full">Badan Perencanaan Pembangunan<br/>Riset dan Inovasi Daerah</span>
+      </div>
+    </a>
+    <div class="header-search">
+      <input type="text" placeholder="Cari informasi..." id="searchInput"/>
+      <button onclick="doSearch()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <ul class="nav-menu">
+      <li class="nav-item active"><a href="#beranda">Beranda</a></li>
+
+      <li class="nav-item has-dropdown">
+        <a href="#tentang">Tentang Kami <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#">Sejarah Singkat</a></li>
+          <li><a href="#">Visi &amp; Misi</a></li>
+          <li><a href="#">Struktur Organisasi</a></li>
+          <li><a href="#">Pejabat Bapperida</a></li>
+          <li><a href="#">Tugas dan Fungsi</a></li>
+          <li><a href="#">SOP Bapperida</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item has-dropdown">
+        <a href="#">Dokumen Publik <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#">Agenda Pimpinan</a></li>
+          <li class="has-sub">
+            <a href="#">Dokumen Perencanaan ›</a>
+            <ul class="subdropdown">
+              <li><a href="#">RPJPD</a></li>
+              <li><a href="#">RPJMD 2025–2030</a></li>
+              <li><a href="#">RKPD 2026</a></li>
+              <li><a href="#">Renstra Bapperida</a></li>
+              <li><a href="#">Renja 2026</a></li>
+              <li><a href="#">Perjanjian Kerja (PK)</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#">Produk Hukum ›</a>
+            <ul class="subdropdown">
+              <li><a href="#">Rancangan Produk Hukum</a></li>
+              <li><a href="#">Hasil Produk Hukum</a></li>
+              <li><a href="#">Peraturan Daerah</a></li>
+              <li><a href="#">Peraturan Kepala Badan</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Kanal Pengaduan</a></li>
+          <li><a href="#">PPID</a></li>
+          <li><a href="#">Publikasi</a></li>
+          <li><a href="#">Laporan Kinerja</a></li>
+          <li><a href="#">Whistle Blowing</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item has-dropdown">
+        <a href="#">Anggaran <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#">Rencana Kerja Operasional (RKO)</a></li>
+          <li><a href="#">Rencana Kerja dan Anggaran (RKA)</a></li>
+          <li><a href="#">Dokumen Pelaksanaan Anggaran (DPA)</a></li>
+          <li><a href="#">Rencana dan Realisasi</a></li>
+          <li><a href="#">Bantuan Keuangan</a></li>
+          <li class="has-sub">
+            <a href="#">Laporan Keuangan ›</a>
+            <ul class="subdropdown">
+              <li><a href="#">Neraca</a></li>
+              <li><a href="#">Laporan Realisasi Anggaran</a></li>
+              <li><a href="#">Catatan Atas Laporan Keuangan</a></li>
+              <li><a href="#">Laporan Operasional</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-item"><a href="#berita">Berita</a></li>
+
+      <li class="nav-item has-dropdown">
+        <a href="#">Akses Publik <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#">Galeri Foto</a></li>
+          <li><a href="#">Galeri Video</a></li>
+          <li><a href="#">Download Materi</a></li>
+          <li><a href="#">Infografis</a></li>
+          <li><a href="#">Katalog</a></li>
+          <li><a href="#">Informasi Ketenagakerjaan</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item has-dropdown">
+        <a href="#">Aplikasi <span class="caret">▾</span></a>
+        <ul class="dropdown">
+          <li><a href="#">SIPD – Sistem Informasi Pemerintahan</a></li>
+          <li><a href="#">Satu Data Daerah</a></li>
+          <li><a href="#">e-Musrenbang</a></li>
+          <li><a href="#">e-Monev</a></li>
+          <li><a href="#">Portal Riset &amp; Inovasi</a></li>
+        </ul>
+      </li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="slider" id="beranda">
+  <div class="slides-track" id="slidesTrack">
+
+    <div class="slide active" style="background: linear-gradient(135deg, #0a2545 0%, #1a4080 60%, #2563c4 100%)">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Perencanaan Pembangunan Daerah</div>
+        <h1>Merencanakan Masa Depan<br/><em>Daerah yang Lebih Baik</em></h1>
+        <p>Bapperida hadir sebagai motor penggerak perencanaan pembangunan yang berkelanjutan, berbasis riset dan inovasi untuk mewujudkan daerah yang maju dan sejahtera.</p>
+        <div class="slide-actions">
+          <a href="#program" class="slide-btn primary">Lihat Program</a>
+          <a href="#dokumen" class="slide-btn outline">Dokumen Perencanaan</a>
+        </div>
+      </div>
+      <div class="slide-deco">
+        <div class="deco-ring ring-1"></div>
+        <div class="deco-ring ring-2"></div>
+        <div class="deco-ring ring-3"></div>
+        <div class="deco-chart">
+          <div class="chart-bar" style="height:60%; animation-delay:0.2s"></div>
+          <div class="chart-bar" style="height:85%; animation-delay:0.4s"></div>
+          <div class="chart-bar" style="height:45%; animation-delay:0.6s"></div>
+          <div class="chart-bar" style="height:95%; animation-delay:0.8s"></div>
+          <div class="chart-bar" style="height:70%; animation-delay:1.0s"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" style="background: linear-gradient(135deg, #0d4a2f 0%, #1a7a4e 60%, #27ae6e 100%)">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Musrenbang RKPD 2027</div>
+        <h1>Musyawarah Perencanaan<br/><em>Pembangunan Daerah</em></h1>
+        <p>Bapperida menyelenggarakan Musrenbang untuk menjaring aspirasi masyarakat dalam penyusunan RKPD Tahun 2027 secara partisipatif dan transparan.</p>
+        <div class="slide-actions">
+          <a href="#" class="slide-btn primary">Pelajari Lebih Lanjut</a>
+          <a href="#berita" class="slide-btn outline">Baca Berita</a>
+        </div>
+      </div>
+      <div class="slide-deco">
+        <div class="deco-ring ring-1"></div>
+        <div class="deco-ring ring-2"></div>
+        <div class="deco-icon">🌿</div>
+      </div>
+    </div>
+
+    <div class="slide" style="background: linear-gradient(135deg, #3d1a6e 0%, #6b2fa0 60%, #9b4fd1 100%)">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <div class="slide-tag">Transformasi Digital</div>
+        <h1>Inovasi Digital untuk<br/><em>Pelayanan Publik</em></h1>
+        <p>Bapperida mendorong transformasi digital pemerintahan melalui SIPD, Satu Data Daerah, dan berbagai platform inovasi layanan publik berbasis teknologi.</p>
+        <div class="slide-actions">
+          <a href="#" class="slide-btn primary">Akses Aplikasi</a>
+          <a href="#layanan" class="slide-btn outline">Layanan Digital</a>
+        </div>
+      </div>
+      <div class="slide-deco">
+        <div class="deco-ring ring-1"></div>
+        <div class="deco-ring ring-2"></div>
+        <div class="deco-icon">💻</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Slider Controls -->
+  <button class="slider-btn prev" id="sliderPrev">&#8249;</button>
+  <button class="slider-btn next" id="sliderNext">&#8250;</button>
+  <div class="slider-dots" id="sliderDots">
+    <span class="dot active" data-idx="0"></span>
+    <span class="dot" data-idx="1"></span>
+    <span class="dot" data-idx="2"></span>
+  </div>
+</section>
+
+<!-- ===== QUICK LINKS ===== -->
+<div class="quicklinks">
+  <div class="quicklinks-inner">
+    <a href="#" class="ql-item">
+      <span class="ql-icon">📄</span>
+      <span>Dokumen<br/>Perencanaan</span>
+    </a>
+    <a href="#" class="ql-item">
+      <span class="ql-icon">📊</span>
+      <span>Data &amp;<br/>Statistik</span>
+    </a>
+    <a href="#" class="ql-item">
+      <span class="ql-icon">🗺️</span>
+      <span>e-Musrenbang</span>
+    </a>
+    <a href="#" class="ql-item">
+      <span class="ql-icon">💰</span>
+      <span>Info<br/>Anggaran</span>
+    </a>
+    <a href="#" class="ql-item">
+      <span class="ql-icon">📮</span>
+      <span>Pengaduan<br/>Masyarakat</span>
+    </a>
+    <a href="#" class="ql-item">
+      <span class="ql-icon">🔬</span>
+      <span>Riset &amp;<br/>Inovasi</span>
+    </a>
+    <a href="#" class="ql-item">
+      <span class="ql-icon">🏛️</span>
+      <span>PPID</span>
+    </a>
+    <a href="#" class="ql-item">
+      <span class="ql-icon">⬇️</span>
+      <span>Download<br/>Materi</span>
+    </a>
+  </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main-content">
+  <div class="main-inner">
+
+    <!-- LEFT CONTENT -->
+    <div class="content-area">
+
+      <!-- Berita Terbaru -->
+      <section class="section" id="berita">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-bar"></span>BERITA TERBARU
+          </h2>
+          <a href="#" class="see-all">Lihat Semua »</a>
+        </div>
+
+        <!-- Featured News -->
+        <div class="news-featured" id="newsSlider">
+          <div class="news-slide active">
+            <div class="news-img" style="background:linear-gradient(135deg,#1a4080,#3a7bd5)">
+              <span>📋</span>
+              <div class="news-cat">Perencanaan</div>
+            </div>
+            <div class="news-info">
+              <span class="news-date">05/03/2026</span>
+              <h3><a href="#">Musrenbang RKPD 2027: Sinergi Perencanaan dari Bawah untuk Pembangunan yang Merata</a></h3>
+              <p>Bapperida menyelenggarakan Musyawarah Perencanaan Pembangunan tingkat kabupaten/kota untuk menjaring aspirasi masyarakat dalam penyusunan RKPD Tahun 2027.</p>
+              <a href="#" class="news-readmore">Baca Selengkapnya »</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- News List -->
+        <div class="news-list">
+          <article class="news-item">
+            <div class="ni-img" style="background:linear-gradient(135deg,#0d4a2f,#1a7a4e)"><span>🔬</span></div>
+            <div class="ni-content">
+              <div class="ni-meta"><span class="ni-cat">Inovasi</span><span class="ni-date">28/02/2026</span></div>
+              <h4><a href="#">Launching Platform Satu Data Daerah untuk Mendukung Kebijakan Berbasis Data</a></h4>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="ni-img" style="background:linear-gradient(135deg,#3d1a6e,#6b2fa0)"><span>🤝</span></div>
+            <div class="ni-content">
+              <div class="ni-meta"><span class="ni-cat">Kerjasama</span><span class="ni-date">20/02/2026</span></div>
+              <h4><a href="#">MoU Bapperida dengan Perguruan Tinggi Lokal untuk Penguatan Riset Pembangunan</a></h4>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="ni-img" style="background:linear-gradient(135deg,#8a3000,#d4790a)"><span>📊</span></div>
+            <div class="ni-content">
+              <div class="ni-meta"><span class="ni-cat">Evaluasi</span><span class="ni-date">15/02/2026</span></div>
+              <h4><a href="#">Laporan Kinerja Triwulan IV 2025: Capaian Program Pembangunan Daerah Melampaui Target</a></h4>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="ni-img" style="background:linear-gradient(135deg,#0a4040,#1a7a7a)"><span>🏆</span></div>
+            <div class="ni-content">
+              <div class="ni-meta"><span class="ni-cat">Penghargaan</span><span class="ni-date">10/02/2026</span></div>
+              <h4><a href="#">Bapperida Raih Penghargaan KIP Award atas Keterbukaan Informasi Publik Terbaik</a></h4>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="ni-img" style="background:linear-gradient(135deg,#1a4080,#2563c4)"><span>📝</span></div>
+            <div class="ni-content">
+              <div class="ni-meta"><span class="ni-cat">Kegiatan</span><span class="ni-date">05/02/2026</span></div>
+              <h4><a href="#">Bapperida Gelar Workshop Penyusunan Indikator Kinerja Utama (IKU) 2026</a></h4>
+            </div>
+          </article>
+          <article class="news-item">
+            <div class="ni-img" style="background:linear-gradient(135deg,#4a0a0a,#a01a1a)"><span>🌱</span></div>
+            <div class="ni-content">
+              <div class="ni-meta"><span class="ni-cat">Lingkungan</span><span class="ni-date">30/01/2026</span></div>
+              <h4><a href="#">Integrasi SDGs dalam Dokumen Perencanaan Daerah Tahun 2026</a></h4>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Infografis -->
+      <section class="section" id="infografis">
+        <div class="section-header">
+          <h2 class="section-title"><span class="title-bar"></span>INFOGRAFIS</h2>
+          <a href="#" class="see-all">Lihat Semua »</a>
+        </div>
+        <div class="infografis-grid">
+          <div class="infografis-card">
+            <div class="ig-visual" style="background:linear-gradient(135deg,#1a4080,#3a7bd5)">
+              <span>📈</span>
+              <div class="ig-bars">
+                <div class="ig-bar" style="height:60%;--clr:#4a9eff"></div>
+                <div class="ig-bar" style="height:80%;--clr:#7bc4ff"></div>
+                <div class="ig-bar" style="height:45%;--clr:#4a9eff"></div>
+                <div class="ig-bar" style="height:90%;--clr:#7bc4ff"></div>
+              </div>
+            </div>
+            <p>Capaian Indikator Makro Pembangunan 2025</p>
+          </div>
+          <div class="infografis-card">
+            <div class="ig-visual" style="background:linear-gradient(135deg,#0d4a2f,#1a7a4e)">
+              <span>🏥</span>
+              <div class="ig-pie">
+                <svg viewBox="0 0 42 42" width="80" height="80">
+                  <circle r="15.9" cx="21" cy="21" fill="none" stroke="#27ae6e" stroke-width="10" stroke-dasharray="75 25" stroke-dashoffset="25"/>
+                  <circle r="15.9" cx="21" cy="21" fill="none" stroke="#1a4" stroke-width="10" stroke-dasharray="25 75" stroke-dashoffset="-50"/>
+                </svg>
+              </div>
+            </div>
+            <p>Realisasi Program Kesehatan Masyarakat 2025</p>
+          </div>
+          <div class="infografis-card">
+            <div class="ig-visual" style="background:linear-gradient(135deg,#3d1a6e,#6b2fa0)">
+              <span>💼</span>
+              <div class="ig-bars">
+                <div class="ig-bar" style="height:55%;--clr:#b07aff"></div>
+                <div class="ig-bar" style="height:75%;--clr:#d4aaff"></div>
+                <div class="ig-bar" style="height:85%;--clr:#b07aff"></div>
+                <div class="ig-bar" style="height:65%;--clr:#d4aaff"></div>
+              </div>
+            </div>
+            <p>Tingkat Pengangguran &amp; Angkatan Kerja Daerah</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="sidebar">
+
+      <!-- Agenda -->
+      <div class="widget">
+        <div class="widget-header">
+          <h3><span class="title-bar"></span>AGENDA PIMPINAN</h3>
+          <a href="#" class="see-all-sm">Semua »</a>
+        </div>
+        <div class="agenda-list">
+          <div class="agenda-item">
+            <div class="agenda-date">
+              <span class="ag-day">10</span>
+              <span class="ag-month">MAR</span>
+            </div>
+            <div class="agenda-info">
+              <h5>Rapat Koordinasi Lintas OPD</h5>
+              <p>09.00 WIB – Aula Utama</p>
+            </div>
+          </div>
+          <div class="agenda-item">
+            <div class="agenda-date">
+              <span class="ag-day">12</span>
+              <span class="ag-month">MAR</span>
+            </div>
+            <div class="agenda-info">
+              <h5>Musrenbang Kecamatan</h5>
+              <p>08.00 WIB – Kec. Pusat Kota</p>
+            </div>
+          </div>
+          <div class="agenda-item">
+            <div class="agenda-date">
+              <span class="ag-day">15</span>
+              <span class="ag-month">MAR</span>
+            </div>
+            <div class="agenda-info">
+              <h5>Konsultasi Publik RKPD 2027</h5>
+              <p>10.00 WIB – Hotel Pemerintah</p>
+            </div>
+          </div>
+          <div class="agenda-item">
+            <div class="agenda-date">
+              <span class="ag-day">18</span>
+              <span class="ag-month">MAR</span>
+            </div>
+            <div class="agenda-info">
+              <h5>Penyusunan Renstra Bapperida</h5>
+              <p>08.30 WIB – Ruang Rapat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dokumen Terbaru -->
+      <div class="widget">
+        <div class="widget-header">
+          <h3><span class="title-bar"></span>DOKUMEN TERBARU</h3>
+          <a href="#" class="see-all-sm">Semua »</a>
+        </div>
+        <ul class="doc-list">
+          <li>
+            <span class="doc-icon pdf">PDF</span>
+            <a href="#">RKPD Tahun 2027 (Draft)</a>
+          </li>
+          <li>
+            <span class="doc-icon pdf">PDF</span>
+            <a href="#">Laporan Kinerja 2025</a>
+          </li>
+          <li>
+            <span class="doc-icon pdf">PDF</span>
+            <a href="#">Renstra Bapperida 2025–2030</a>
+          </li>
+          <li>
+            <span class="doc-icon doc">DOC</span>
+            <a href="#">KAK Riset &amp; Inovasi 2026</a>
+          </li>
+          <li>
+            <span class="doc-icon pdf">PDF</span>
+            <a href="#">DPA Bapperida 2026</a>
+          </li>
+          <li>
+            <span class="doc-icon pdf">PDF</span>
+            <a href="#">Perjanjian Kinerja 2026</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Statistik -->
+      <div class="widget widget-stats">
+        <div class="widget-header">
+          <h3><span class="title-bar"></span>STATISTIK WEBSITE</h3>
+        </div>
+        <div class="stats-box">
+          <div class="stat-row">
+            <span class="sr-label">Pengunjung Hari Ini</span>
+            <span class="sr-val">1.247</span>
+          </div>
+          <div class="stat-row">
+            <span class="sr-label">Pengunjung Bulan Ini</span>
+            <span class="sr-val">38.491</span>
+          </div>
+          <div class="stat-row">
+            <span class="sr-label">Total Pengunjung</span>
+            <span class="sr-val">524.830</span>
+          </div>
+          <div class="stat-row">
+            <span class="sr-label">Total Dokumen</span>
+            <span class="sr-val">284</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galeri -->
+      <div class="widget">
+        <div class="widget-header">
+          <h3><span class="title-bar"></span>GALERI FOTO</h3>
+          <a href="#" class="see-all-sm">Semua »</a>
+        </div>
+        <div class="gallery-grid">
+          <div class="gal-item" style="background:linear-gradient(135deg,#1a4080,#3a7bd5)"><span>🏛️</span></div>
+          <div class="gal-item" style="background:linear-gradient(135deg,#0d4a2f,#1a7a4e)"><span>🤝</span></div>
+          <div class="gal-item" style="background:linear-gradient(135deg,#3d1a6e,#6b2fa0)"><span>📊</span></div>
+          <div class="gal-item" style="background:linear-gradient(135deg,#8a3000,#d4790a)"><span>🎤</span></div>
+          <div class="gal-item" style="background:linear-gradient(135deg,#0a4040,#1a7a7a)"><span>📋</span></div>
+          <div class="gal-item" style="background:linear-gradient(135deg,#4a0a0a,#a01a1a)"><span>🏆</span></div>
+        </div>
+      </div>
+
+      <!-- Banner PPID -->
+      <div class="widget-banner">
+        <a href="#">
+          <div class="banner-ppid">
+            <span>🔍</span>
+            <div>
+              <strong>PPID Bapperida</strong>
+              <small>Pejabat Pengelola Informasi &amp; Dokumentasi</small>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="banner-sipd">
+            <span>💻</span>
+            <div>
+              <strong>SIPD</strong>
+              <small>Sistem Informasi Pemerintahan Daerah</small>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="banner-lpse">
+            <span>🛒</span>
+            <div>
+              <strong>LPSE</strong>
+              <small>Layanan Pengadaan Secara Elektronik</small>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </aside>
+  </div>
+</main>
+
+<!-- ===== PETA LOKASI ===== -->
+<section class="peta-section" id="kontak">
+  <div class="peta-inner">
+    <div class="peta-info">
+      <h2><span class="title-bar"></span>PETA LOKASI</h2>
+      <h3>BAPPERIDA</h3>
+      <div class="peta-details">
+        <div class="pd-item">
+          <span>📍</span>
+          <p>Jl. Perencanaan No. 1, Kompleks Perkantoran Pemerintah Daerah 00000</p>
+        </div>
+        <div class="pd-item">
+          <span>☎</span>
+          <p>Telp: (024) 123-4567<br/>Fax: (024) 123-4568</p>
+        </div>
+        <div class="pd-item">
+          <span>✉</span>
+          <p>bapperida@daerah.go.id</p>
+        </div>
+        <div class="pd-item">
+          <span>🌐</span>
+          <p>https://bapperida.go.id</p>
+        </div>
+      </div>
+    </div>
+    <div class="peta-map">
+      <div class="map-placeholder">
+        <div class="map-pin-anim">
+          <div class="map-dot"></div>
+          <div class="map-ripple"></div>
+          <div class="map-ripple delay1"></div>
+        </div>
+        <div class="map-grid"></div>
+        <div class="map-roads">
+          <div class="road h" style="top:40%"></div>
+          <div class="road h" style="top:65%"></div>
+          <div class="road v" style="left:35%"></div>
+          <div class="road v" style="left:62%"></div>
+        </div>
+        <p class="map-label">Klik untuk buka di Google Maps</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-inner">
+      <div class="footer-col brand">
+        <div class="footer-logo">
+          <svg width="52" height="52" viewBox="0 0 64 64">
+            <circle cx="32" cy="32" r="30" fill="#1a4080" stroke="#c8a951" stroke-width="2"/>
+            <circle cx="32" cy="32" r="24" fill="none" stroke="#c8a951" stroke-width="1" stroke-dasharray="4 2"/>
+            <path d="M20 44 L26 24 L32 38 L38 28 L44 44" stroke="#c8a951" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="32" cy="22" r="4" fill="#c8a951"/>
+          </svg>
+          <div>
+            <strong>BAPPERIDA</strong>
+            <small>Provinsi / Kab / Kota</small>
+          </div>
+        </div>
+        <p>Badan Perencanaan Pembangunan Riset dan Inovasi Daerah – melayani masyarakat dengan perencanaan yang terencana, inovatif, dan berkelanjutan.</p>
+        <div class="footer-social">
+          <a href="#" title="Facebook">fb</a>
+          <a href="#" title="Twitter">tw</a>
+          <a href="#" title="Instagram">ig</a>
+          <a href="#" title="YouTube">yt</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Tentang Kami</h4>
+        <ul>
+          <li><a href="#">Sejarah Singkat</a></li>
+          <li><a href="#">Visi &amp; Misi</a></li>
+          <li><a href="#">Struktur Organisasi</a></li>
+          <li><a href="#">Tugas dan Fungsi</a></li>
+          <li><a href="#">Pejabat Bapperida</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Dokumen Publik</h4>
+        <ul>
+          <li><a href="#">RPJMD 2025–2030</a></li>
+          <li><a href="#">RKPD 2026</a></li>
+          <li><a href="#">Renstra Bapperida</a></li>
+          <li><a href="#">Laporan Kinerja</a></li>
+          <li><a href="#">Produk Hukum</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tautan Penting</h4>
+        <ul>
+          <li><a href="#">Bappenas.go.id</a></li>
+          <li><a href="#">SIPD Kemendagri</a></li>
+          <li><a href="#">Portal Satu Data</a></li>
+          <li><a href="#">Kemenkeu.go.id</a></li>
+          <li><a href="#">LKPP.go.id</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <p>© 2026 BAPPERIDA – Hak Cipta Dilindungi Undang-undang</p>
+      <p><a href="#">Kebijakan Privasi</a> | <a href="#">Peta Situs</a> | <a href="#">Hubungi Kami</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
